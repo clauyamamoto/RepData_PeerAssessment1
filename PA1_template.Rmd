@@ -148,7 +148,7 @@ for (i in 1:nrow(fd_imputation)){
 ```
 
 2. **Make a panel plot containing a time series plot (i.e. type = "l") of the 5-minute interval (x-axis) and the average number of steps taken, averaged across all weekday days or weekend days (y-axis).**
-```{r ggplot}
+```{r ggplot }
 #average total steps by weekday type and interval on the new data set
 fd_weekday_mean <- aggregate(fd_imputation$steps, 
                             by = list(fd_imputation$Weekday_type,fd_imputation$interval),
